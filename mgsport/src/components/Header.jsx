@@ -34,7 +34,7 @@ const Header = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" id="contacto" aria-current="page" href="/contacto">Contacto</a>
+                            <Link to={"/contacto"} className="nav-link" id="contacto" aria-current="page" href="/contacto">Contacto</Link>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
