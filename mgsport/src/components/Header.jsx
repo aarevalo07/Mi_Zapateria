@@ -12,13 +12,13 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to={"/"} className="nav-link" id="inicio" aria-current="page" href='#'>Inicio</Link>
+                            <Link to={"/inicio"} className="nav-link" id="inicio" aria-current="page" href='#'>Inicio</Link>
                         </li>
                         <li className="nav-item">
                             <Link to={"/catalogo"} className="nav-link" id="catalogo" aria-current="page" href="#">Catalogo</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id="variedad" href="/variedad" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" id="variedad" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Variedad
                             </a>
                             <ul className="dropdown-menu">
@@ -34,12 +34,12 @@ const Header = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/contacto"} className="nav-link" id="contacto" aria-current="page" href="/contacto">Contacto</Link>
+                            <Link to={"/contacto"} className="nav-link" id="contacto" aria-current="page" href="#">Contacto</Link>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
+                        <button className="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
