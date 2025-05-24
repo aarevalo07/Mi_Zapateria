@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from "../assets/logo.svg";
 
 const Header = () => {
@@ -11,13 +12,13 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" id="inicio" aria-current="page" href="\">Inicio</a>
+                            <Link to={"/"} className="nav-link" id="inicio" aria-current="page" href='#'>Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" id="catalogo" aria-current="page" href="\catalogo">Catalogo</a>
+                            <Link to={"/catalogo"} className="nav-link" id="catalogo" aria-current="page" href="#">Catalogo</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id="variedad" href="\variedad" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" id="variedad" href="/variedad" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Variedad
                             </a>
                             <ul className="dropdown-menu">
@@ -33,7 +34,7 @@ const Header = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" id="contacto" aria-current="page" href="\contacto">Contacto</a>
+                            <Link to={"/contacto"} className="nav-link" id="contacto" aria-current="page" href="/contacto">Contacto</Link>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
